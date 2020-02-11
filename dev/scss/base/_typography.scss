@@ -1,0 +1,38 @@
+/* =============
+    Typography
+============= */
+
+body {
+  font-family: 'Muli', sans-serif;
+
+  #text {
+    position: relative;
+    z-index: 0;
+
+    h1 {
+      font-size: 100pt;
+      color: #c8c2c2;
+      position: absolute;
+      top: 0;
+
+      @include md{
+        font-size: 160pt;
+      }
+
+      @include xl{
+        font-size: 240pt;
+      }
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
